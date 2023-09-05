@@ -31,6 +31,7 @@ import { BasicCustomContextMenuComponent } from './main/extensions/context-menu/
 import { SubMenuCustomContextMenuComponent } from './main/extensions/context-menu/custom-context-menu/sub-menu-custom-context-menu/sub-menu-custom-context-menu.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ItemModule } from './prd/item/item.module';
 
 @NgModule({
     declarations: [

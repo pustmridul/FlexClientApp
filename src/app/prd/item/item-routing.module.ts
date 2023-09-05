@@ -6,11 +6,7 @@ import { ItemService } from './item.service';
 const routes: Routes = [
    {
     path: 'item-list',
-    component: ItemComponent,
-    resolve: {
-      uls: ItemService
-    },
-    data: { animation: 'ItemComponent' }
+    component: ItemComponent
   },
 ];
 
