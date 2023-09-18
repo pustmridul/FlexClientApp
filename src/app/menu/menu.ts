@@ -51,7 +51,7 @@ export const menu: CoreMenu[] = [
         translate: 'MENU.APPS.EMAIL',
         type: 'item',
         icon: 'mail',
-        url: 'apps/email'
+        url: 'item/item-list'
       },
       {
         id: 'chat',
