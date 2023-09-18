@@ -36,18 +36,21 @@
                             <thead>
                                 <tr>
                                     <th>SL</th>
-                                    <th>Name</th>                              
+                                    <th>Name</th>       
+                                    <th>Code</th>                       
                                     <th>Actions</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr *ngFor="let x of rows ; index as i">
                                     <td>
-                                        
+                                        {{i+1}}
                                     </td>
-                                    <td></td>
                                     <td>
-                                      
+                                        {{x.Name}}
+                                    </td>
+                                    <td>
+                                      {{x.Code}}
                                     </td>
                                     <td><span class="badge badge-pill badge-light-primary mr-1">Active</span></td>
                                     <td class="overflow-hidden">

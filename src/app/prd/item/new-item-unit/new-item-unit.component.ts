@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CoreSidebarService } from '@core/components/core-sidebar/core-sidebar.service';
+import { ItemUnit } from '../item';
 
 
 @Component({
@@ -10,10 +11,8 @@ import { CoreSidebarService } from '@core/components/core-sidebar/core-sidebar.s
 
 
 export class NewItemUnitComponent implements OnInit {
-  public fullname;
-  public username;
-  public email;
-
+ 
+  itemUnit= new ItemUnit();
   /**
    * Constructor
    *
@@ -27,6 +26,7 @@ export class NewItemUnitComponent implements OnInit {
    * @param name
    */
   toggleSidebar(name): void {
+    this.itemUnit= new ItemUnit();
     this._coreSidebarService.getSidebarRegistry(name).toggleOpen();
   }
 
@@ -37,6 +37,7 @@ export class NewItemUnitComponent implements OnInit {
    */
   submit(form) {
     if (form.valid) {
+      console.log(this.itemUnit);
       this.toggleSidebar('new-item-unit');
     }
   }

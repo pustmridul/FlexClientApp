@@ -11,6 +11,7 @@ export class UserListService implements Resolve<any> {
   public rows: User[]=[];
   public onUserListChanged: BehaviorSubject<any>;
 
+  
   /**
    * Constructor
    *
